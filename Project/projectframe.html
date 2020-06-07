@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="contactform.html">
+	<script type="text/javascript">
+	function loo()
+	{
+		 var x = document.forms["myform"]["fname"].value;
+		 var y = document.forms["myform"]["gn"].value;
+		 var z = document.forms["myform"]["em"].value;
+		 var a = document.forms["myform"]["ser"].value;
+		 var b = document.forms["myform"]["ti"].value;
+		 var c = document.forms["myform"]["ad"].value;
+		if(x == "")
+		{
+			alert("Name must be filled out");
+		}
+		else if(y == "")
+		{
+			alert("Gender must be filled out");
+		}
+		else if (z == "") 
+		{
+			alert("Email must be filled out");
+		}
+		else if(a == "")
+		{
+			alert("Service must be filled out ");
+		}
+		else if(b == "")
+		{
+			alert("Time must be filled out");
+		}
+		else if(c == "")
+		{
+			alert("Address must be filled out");
+		}
+		else
+		{
+		alert("Submitted sucessfully!\nThank you..");
+	}
+	}
+</script>
+	<style type="text/css">
+		body
+		{
+			background-image: url("freestocks-org-209883-unsplash.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		#b
+		{
+			width: 100px;
+			height: auto;
+			border-radius: 100px;
+
+		}
+		h1
+		{
+			color: red;
+		}
+		h2
+		{
+			text-align: center;
+		}
+			.box
+{
+	height: 600px;
+	width: 500px;
+	top: 86%;
+	left: 50%;
+	opacity: 0.3;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	background-color: #000;
+	text-align: center;
+	transition: 0.25s;
+	border-radius: 20px;
+}
+span
+{
+	color: #fff;
+
+}
+	h1
+	{
+		font-family: lucida handwriting;
+		font-size: 50px;
+		text-decoration: underline;
+	}
+	form
+	{
+		padding: 15px;
+		margin: 25px;
+		text-decoration: none;
+	}
+	#qw
+	{
+		padding: 25px;
+		text-align: center;
+        color: #fff;
+	}
+	input
+	{
+		padding: 8px;
+		margin: 5px;
+		text-align: center;
+		border: 2px solid #000;
+		border-radius: 25px;
+		position: relative;
+	}
+	#pos
+	{
+		border: 5px;
+		background-color: yellow;
+		color:#000000;
+	    padding: 10px;
+		top: 30px;
+		text-decoration: none;
+		
+
+	}
+	button
+	{
+		background-color:#1a0dab;
+		text-decoration: none;
+		border-radius: 9px;
+		color: #000;
+		width: 100px;
+
+	}
+	#pos:hover
+	{
+		background-color: pink;
+		color: black;
+	}
+	#ll
+	{
+		color: transparent;
+	}
+	textarea
+	{
+		left: 50px;
+		height: 70px;
+		width: 150px;
+		border-radius: 20px;
+	}
+	button a
+	{
+        text-decoration: none;
+        color: #000;
+	}
+	</style>
+
+</head>
+<body>
+      <img src="beauty.png" id="b">
+      <h1 ><marquee> Welcome to Beauty Salon</marquee></h1>
+      <h2>Appointment Application</h2>
+      <div class="box">
+      	<p><h1>Visit Us</h1>
+<span>221, Baker's Street, London<br>
+cky13129@gmail.com  \  Mobile No. : 6352780623</span><br>
+<span>OPENING HOURS
+Mon - Fri: 9am - 10pm  \  ​​Saturday: 11am - 10pm  \  Sunday: 11am - 4pm
+</span></p>
+      	<form name="myform"  action="/action_page.php" method="post">
+      	    <span id="qw">Name  </span><span id="ll">0 0 0</span>	<input type="text" name="fname" placeholder="Name" required=""><br>
+      	    <span id="qw">Gender</span><span id="ll"> 0 0 0</span><input type="text" name="gn"placeholder="Gender" required=""><br>
+      		<span id="qw">Address</span><span id="ll">0 0 0</span><input type="text" name="ad" placeholder="Address" required="required"><br>
+      	    <span id="qw">Email   </span><span id="ll">0 0 0 0</span>	<input type="email" name="em" placeholder="E-mail" required=""><br>
+      	    <span id="qw">Service Type</span><input type="text" name="ser" placeholder="Service" required=""><br>
+	      	<span id="qw">Time   </span><span id="ll">0 0 0 0 </span><input type="text" name="ti" placeholder="Time to visit" required=""><br><br>
+	    	<button <input type="reset" name="reset">>Reset</button>
+	      	<button id="pos" onclick="loo()"><a href="#">Book Appointment</a></button><br>
+	    </form>
+      </div>
+
+</body>
+</html>
